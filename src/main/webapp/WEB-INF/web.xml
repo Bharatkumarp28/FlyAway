@@ -4,4 +4,34 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>LoginCheck</servlet-name>
+  	<display-name>LoginCheck</display-name>
+  	<description></description>
+  	<servlet-class>com.simplilearn.servlets.admin.LoginCheck</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SignCheck</servlet-name>
+  	<display-name>SignCheck</display-name>
+  	<description></description>
+  	<servlet-class>com.simplilearn.servlets.users.LoginCheck</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SigninCheck</servlet-name>
+  	<display-name>SigninCheck</display-name>
+  	<description></description>
+  	<servlet-class>com.simplilearn.servlets.admin.LoginCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginCheck</servlet-name>
+  	<url-pattern>/LoginCheck</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SignCheck</servlet-name>
+  	<url-pattern>/SignCheck</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SigninCheck</servlet-name>
+  	<url-pattern>/SigninCheck</url-pattern>
+  </servlet-mapping>
 </web-app>
