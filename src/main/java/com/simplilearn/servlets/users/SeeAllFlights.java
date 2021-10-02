@@ -56,10 +56,13 @@ public class SeeAllFlights extends HttpServlet {
 
 					List<Flight> flights = session.createQuery(query).list();
 					
+					
 					if (flights.size() > 0) {
-					out.print("<a href=\"index.html\">Home</a>");
-					out.println("<h1>List of all Flights: </h1>");
+					request.getRequestDispatcher("index.jsp").include(request, response);
+					//out.print("<a href=\"index.jsp\">Home</a>");
 					out.println("<style> table,th,td { border : 1px solid black ; padding :15px;} </style>");
+					out.println("<center>");
+					out.println("<h1 style=\"margin-top: 23px;\">List of all Flights: </h1>");
 					out.println("<table>");
 					out.println("<tr>");
 						out.println("<th>"); out.println("Flight ID"); out.println("</th>");
@@ -86,9 +89,10 @@ public class SeeAllFlights extends HttpServlet {
 						}
 					}
 					out.println("</table>");
+					out.println("</center>");
 					request.getRequestDispatcher("registeration.html").include(request, response);
 					} else {
-						out.print("<a href=\"index.html\">Home</a>");
+						out.print("<a href=\"index.jsp\">Home</a>");
 						out.print("<h1>Sorry there are no flights currently!<h1>");
 					}
 

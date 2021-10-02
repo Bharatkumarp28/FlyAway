@@ -44,9 +44,7 @@ table td, table th {
 		<h1 class="display-3 text-warning">FlyAway</h1>
 			<ul class="nav">
 				<li class="nav-item"><button class="bg-success" type="button"
-						data-toggle="modal" data-target="#myModal">SignUp</button></li>&nbsp;&nbsp;
-				<li class="nav-item"><button class="bg-success" type="button"
-						data-toggle="modal" data-target="#myModal1" style="margin-right: 30px">Login</button></li>
+						data-toggle="modal" data-target="#myModal1" style="margin-right: 30px">Admin Login</button></li>
 			</ul>
 		</nav>
 

@@ -102,7 +102,9 @@ public class Registeration extends HttpServlet {
 			List<Flight> flights = session.createQuery(query).list();
 			
 			if (flights.size() > 0) {
-			out.print("<a href=\"index.html\">Home</a>");
+			//out.print("<a href=\"index.html\">Home</a>");
+			request.getRequestDispatcher("head.jsp").include(request, response);
+			out.println("<center>");
 			out.println("<h1>Confirm Flight Details: </h1>");
 			for(Flight i:flights) {
 				if (i.getNumberOfSeats() > 0) {
@@ -118,8 +120,9 @@ public class Registeration extends HttpServlet {
 				}
 			}
 			request.getRequestDispatcher("payment.html").include(request, response);
+			out.println("<center>");
 			} else {
-				out.print("<a href=\"index.html\">Home</a>");
+				out.print("<a href=\"index.jsp\">Home</a>");
 				out.print("<h1>You must enter a valid flight id!<h1>");
 			}
 			session.close();

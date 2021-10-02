@@ -1,8 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Admin Login Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlyAway</title>
 <style>
 table {
 	margin-top: 10px;
@@ -49,22 +55,8 @@ table td, table th {
 			</ul>
 		</nav>
     </div>
-	<center>
-	<h1>Change Password</h1>
-	<form name="change password" method="POST" action="change-password">
-	
-	<div class="form-group">
-		New Password : <input type="text" class="form-control" placeholder="Enter password" name="password" style="width: 300px;">
-	</div>
-	<div class="form-group">
-		Confirm New Password: <input type="password" class="form-control"
-					placeholder="REenter Password" name="confirmpassword" style="width: 300px;">
-	</div>
-	<div class="form-group">
-		<input type="submit" value="Change password" class="btn btn-primary">
-	</div>
-	</form>
-	</center>
-	
+
+<!--  	<a href="login.html">Admin Login</a>
+	<hr> -->
 </body>
 </html>

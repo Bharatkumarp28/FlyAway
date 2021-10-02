@@ -3,18 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <title>Flight Registration Page</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-	<h1>Flight Registration Page</h1>
+	<h1 style="text-align:center ; margin-top:10px">Flight Registration Page:</h1>
+	
 	<form name="flightRegistraton" method="POST" action="registeration">
-		Flight ID : <input type="number" name="flightid" placeholder="12" required> <br/>
-		First Name : <input type="text" name="firstname" placeholder="John" required> <br/>
-		Last Name : <input type="text" name="lastname" placeholder="Doe" required> <br/>
-		Email : <input type="email" name="email" placeholder="johndoe@gmail.com" required> <br/>
-		Birthday (yyyy-MM-dd) : <input type="date" name="birthday" placeholder="1990-04-02" required> <br/>
-		<br/>
-		<input type="submit" value="Submit Flight Registration">
+	<div class="row">
+	<div class="col-sm-2">
+		Flight ID : <input type="number" name="flightid" placeholder="12" required> 
+	</div>
+	<div class="col-sm-2">
+		First Name : <input type="text" name="firstname" placeholder="John" required> 
+	</div>
+	<div class="col-sm-2">
+		Last Name : <input type="text" name="lastname" placeholder="Doe" required> 
+	</div>
+	<div class="col-sm-2">
+		Email : <input type="email" name="email" placeholder="johndoe@gmail.com" required> 
+	</div>
+	<div class="col-sm-2">
+		Birthday :<br> <input type="date" name="birthday" placeholder="1990-04-02" required> <br/>
+	</div>
+	<div class="col-sm-2">
+		<input class="btn btn-primary" type="submit" value="Submit Flight Registration" style="margin-top: 14px;">
+	</div>
+	</div>
 	</form>
+	<br><br>
 	
 </body>
 </html>

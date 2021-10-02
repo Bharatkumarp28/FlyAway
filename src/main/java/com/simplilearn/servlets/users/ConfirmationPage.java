@@ -57,7 +57,8 @@ public class ConfirmationPage extends HttpServlet {
 			List<Flight> flights = session.createQuery(query).list();
 			
 			if (flights.size() > 0) {
-			out.print("<a href=\"index.html\">Home</a><br/>");
+			//out.print("<a href=\"index.html\">Home</a><br/>");
+			request.getRequestDispatcher("head.jsp").include(request, response);
 			out.println("<h1>Congratulations! You're all set, "  + firstName + "!</h1><br/><br/>");
 			out.println("<h1>List of Confirmed Flights for "  + firstName + "</h1><hr>");
 			out.println("<style> table,th,td { border : 1px solid black ; padding :15px;} </style>");
